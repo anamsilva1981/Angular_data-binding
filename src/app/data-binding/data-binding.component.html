@@ -1,0 +1,39 @@
+
+<section class="property-binding">
+  <article>
+    <h3>Interpolation / Interpolação </h3>
+    <!-- Interpolação  -->
+    <p>
+      String renderizada com interpolação {{ url }}
+    </p>
+
+    <!--  Interpolação com expressões matemáticos -->
+    <p>
+      Resultado de 1 + 1 é igual a {{ 1 + 1}}
+    </p>
+
+    <!-- Interpolação com expressões matemáticos e método  -->
+    <p>
+      Resultado de 1 + 1 é igual a {{ 1 + 1 + getValor() }}
+    </p>
+
+    <!-- Interpolação com expressões matemáticos e expressões booleanas  -->
+    <p>
+      Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}
+    </p>
+  </article>
+
+  <!-- Property Binding -->
+  <article>
+    <h3>Property Binding</h3>
+    <!-- Saida de imagem através de interpolação -->
+    <img src="{{ urlImagem }}">
+
+    <!-- Utilização Property Binding explicito-->
+    <img [src]="urlImagem">
+
+    <img bind-src="urlImagem">
+
+  </article>
+
+</section>
